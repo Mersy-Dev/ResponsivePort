@@ -17,14 +17,16 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" alt="" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">contact</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
 
                 </ul>
+                <i class="fas fa-bars" header="openmenu()"></i>
             </nav>
 
             <div class="header-text">
@@ -139,7 +141,8 @@
                     <img src="images/work-1.png" alt="">
                     <div class="layer">
                         <h3>Social Media App</h3>
-                        <p>The App connects you with Talented People around the Wolrd. Want to try it out? Download from playstore.</p>
+                        <p>The App connects you with Talented People around the Wolrd. Want to try it out? Download from
+                            playstore.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -147,7 +150,8 @@
                     <img src="images/work-2.png" alt="">
                     <div class="layer">
                         <h3>Music App</h3>
-                        <p>Enjoy every jam of your favorite artiste with the best music app. Want to try it out? Download from playstore.</p>
+                        <p>Enjoy every jam of your favorite artiste with the best music app. Want to try it out?
+                            Download from playstore.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -155,7 +159,8 @@
                     <img src="images/work-3.png" alt="">
                     <div class="layer">
                         <h3>Online Shopping App</h3>
-                        <p>The App connects you with Talented People around the Wolrd. Want to try it out? Download from playstore.</p>
+                        <p>The App connects you with Talented People around the Wolrd. Want to try it out? Download from
+                            playstore.</p>
                         <a href="#"><i class="fas fa-external-link-alt"></i></a>
                     </div>
                 </div>
@@ -168,6 +173,43 @@
 
 
     <!-- .................... CONTACT....................  -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>anuoluwafalaju@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>08138862185</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/"><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-square"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+
+
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message Here"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="copyright">
+            <p>Copyright @ Mercy. Modern Day <i class="fas fa-heart"></i> Software Developer</p>
+        </div>
+    </div>
+
 
 
     <script>
@@ -191,6 +233,21 @@
 
 
 
+    </script>
+
+    <script>
+        var sideme = document.getElementById("sidemenu")
+
+
+
+        function openmenu(){
+            sideme.style.right = "0"
+        } 
+
+        function closemenu(){
+            sideme.style.right = "-200px"
+        }
+        
     </script>
 
 </body>
